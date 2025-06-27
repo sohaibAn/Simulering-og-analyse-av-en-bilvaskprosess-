@@ -1,22 +1,29 @@
-🚗 Bilvask-simulering med JaamSim
-Dette prosjektet simulerer en bilvasktjeneste for å forstå og forbedre kø, ventetid og kapasitetsutnyttelse 🧼⏳
+# 🚗 Bilvask-simulering med JaamSim
 
-Vi har bygget en modell i JaamSim med en maskinvask og to selvvaskstasjoner. Modellen tar hensyn til:
+## 📌 Om prosjektet
+Dette prosjektet simulerer en bilvasktjeneste for å analysere og forbedre ventetid, kø og kapasitetsutnyttelse. Simuleringen er laget i **JaamSim** og gjenspeiler en reell tjeneste med maskinvask og to selvvaskstasjoner.
 
-🕐 Tilfeldig ankomst (eksponentialfordeling)
+## 🛠 Hva modellen inneholder
+- 🕐 Tilfeldig kundetilstrømming (eksponentialfordeling)
+- 🧽 Valg mellom vanlig og premium vask
+- ⚙️ Vedlikehold og teknisk feil (med ulik varighet og frekvens)
+- ⛔ Balking – kunder forlater hvis køen er full
+- 📊 KPI-er: ventetid, ressursbruk, kølengde og tapte kunder
 
-🔁 Valg mellom vanlig og premium vask
+## 🔬 Scenarioanalyse
+Det er testet **fem ulike scenarioer** over én uke (160 timer), der faktorer som vedlikehold, nedetid, kølengder og ankomstintervall er endret for å se effekt.
 
-⚙️ Vedlikehold og tekniske feil
+### 🔍 Beste resultat: Scenario 4
+- ⏱ Kortere ventetid
+- 👥 Færre tapte kunder
+- ⚖️ Jevnere ressursbruk og mindre overbelastning
 
-🧍‍♂️ Kundeadferd (valg, balking og kø)
+## 🤖 Bruk av AI
+**ChatGPT** ble brukt som støtteverktøy:
+- Til å forme problemstillingen
+- Lage komponentnavn i JaamSim
+- Strukturere rapport og grafer
 
-Vi testet 5 ulike scenarioer over én uke (160 timer) for å se hvordan ulike tiltak påvirker systemet 📊
+## ⭐ Bidra
+Synes du prosjektet er interessant? Gi det en ⭐ eller del dine egne forslag til forbedringer!
 
-✅ Scenario 4, med kortere vedlikehold og færre feil, ga best resultater:
-
-Kortere ventetid
-
-Færre tapte kunder
-
-Jevnere flyt og bedre ressursbruk
